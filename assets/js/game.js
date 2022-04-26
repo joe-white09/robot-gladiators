@@ -62,9 +62,15 @@ var fight = function(enemyName) {
       }
     } // end of while loop
   }; // end of fight function
+
+  
 // run fight function to start game
 for (var i = 0; i < enemyNames.length; i++) {
+if (playerHealth > 0 ) {
+  window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ) );
+} {
     var pickedEnemyName = enemyNames[i];
     enemyHealth = 50;
     fight(pickedEnemyName);
+}
 }
